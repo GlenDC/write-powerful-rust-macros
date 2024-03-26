@@ -1,0 +1,9 @@
+[workspace]
+
+members = [
+    "builder-macro",
+    "builder-code",
+    "builder-usage"
+]
+
+resolver = "2"
