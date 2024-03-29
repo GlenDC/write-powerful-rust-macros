@@ -1,0 +1,11 @@
+error: please make sure every panic in your function has a message, check: if age > 30 { panic! (); }
+ --> tests/fails/combine_err.rs:9:9
+  |
+9 |         panic!();
+  |         ^^^^^
+
+error: cannot use macro on a function with Result as return type. Signature: Result < Person, Infallible >
+ --> tests/fails/combine_err.rs:7:1
+  |
+7 | fn create_person_with_empty_panic(name: String, age: u32) -> Result<Person, Infallible> {
+  | ^^
