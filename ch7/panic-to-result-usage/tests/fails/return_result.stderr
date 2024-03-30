@@ -1,5 +1,9 @@
-error: cannot use macro on a function with Result as return type. Signature: Result < Person, String >
- --> tests/fails/return_result.rs:4:1
+error: cannot use macro on a function with Result as return type
+
+         = help: try to remove the Result from the return type
+         = note: we will wrap your return type in Result<_, String>
+
+ --> tests/fails/return_result.rs:4:57
   |
 4 | fn create_person_with_result(name: String, age: u32) -> Result<Person, String> {
-  | ^^
+  |                                                         ^^^^^^^^^^^^^^^^^^^^^^

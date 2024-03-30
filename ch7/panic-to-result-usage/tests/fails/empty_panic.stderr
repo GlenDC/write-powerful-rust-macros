@@ -1,5 +1,9 @@
-error: please make sure every panic in your function has a message, check: if age > 30 { panic! (); }
+error: panic needs a message!
+
+         = help: try to add a message: `panic!("message")`
+         = note: we will add the message to Result's Err
+
  --> tests/fails/empty_panic.rs:6:9
   |
 6 |         panic!();
-  |         ^^^^^
+  |         ^^^^^^^^^
